@@ -1,0 +1,33 @@
+{
+  "name": "shaclex",
+  "version": "1.0.0",
+  "description": "Shaclex client",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha",
+    "build": "browserify main.js -o /src/shapes/shaclex/modules/server/src/main/resources/staticviews/js/bundle.js",
+    "watch": "watchify main.js -o /src/shapes/shaclex/modules/server/src/main/resources/staticviews/js/bundle.js",
+    "_build": "browserify main.js -o out/js/bundle.js",
+    "_watch": "watchify main.js -o out/js/bundle.js",
+    "start": "budo main.js --live"
+  },
+  "keywords": [
+    "shacl",
+    "shex"
+  ],
+  "author": "Jose Emilio Labra Gayo",
+  "license": "ISC",
+  "devDependencies": {
+    "browserify": "^14.4.0",
+    "budo": "^10.0.4",
+    "should": "^13.1.2",
+    "watchify": "^3.9.0"
+  },
+  "dependencies": {
+    "bootstrap": "^3.3.7",
+    "bootstrap-table": "^1.11.2",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.5",
+    "urijs": "^1.19.0"
+  }
+}
